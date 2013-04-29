@@ -7,7 +7,7 @@ namespace Cassette.Stylesheets
     {
         public void Configure(TinyIoCContainer container)
         {
-            container.Register<ISassCompiler, SassCompiler>();
+            container.Register<ISassCompiler, LibSassCompiler>();
         }
     }
 }

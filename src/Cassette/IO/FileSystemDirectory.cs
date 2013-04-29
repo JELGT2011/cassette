@@ -36,6 +36,11 @@ namespace Cassette.IO
             }
         }
 
+        public string GetAbsolutePath()
+        {
+            return GetAbsolutePath("");
+        }
+
         public bool Exists
         {
             get { return Directory.Exists(fullSystemPath); }

@@ -61,6 +61,11 @@ namespace Cassette
 
         public string FullPath { get; set; }
 
+        public string GetAbsolutePath()
+        {
+            return FullPath;
+        }
+
         public bool Exists
         {
             get { return true; }

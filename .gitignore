@@ -13,3 +13,5 @@ src/**/*.nuspec
 *.orig
 src/packages
 cassette-cache
+src/*.sdf
+src/Cassette.Sass/Resources/*.dll

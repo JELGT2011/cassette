@@ -8,6 +8,7 @@ namespace Cassette.IO
     {
         FileAttributes Attributes { get; }
         string FullPath { get; }
+        string GetAbsolutePath();
         bool Exists { get; }
         IFile GetFile(string filename);
         IDirectory GetDirectory(string path);

@@ -11,7 +11,7 @@ namespace Cassette.Stylesheets
 {
     public class SassCompiler_Tests
     {
-        readonly SassCompiler compiler;
+        readonly LibSassCompiler compiler;
         readonly Mock<IFile> file;
         readonly Mock<IDirectory> directory;
         readonly CompileContext compileContext;
@@ -26,7 +26,7 @@ namespace Cassette.Stylesheets
             file.SetupGet(f => f.Directory).Returns(directory.Object);
 
             compileContext = new CompileContext { RootDirectory = directory.Object, SourceFilePath = "~/test.scss" };
-            compiler = new SassCompiler();
+            compiler = new LibSassCompiler();
         }
 
         [Fact]

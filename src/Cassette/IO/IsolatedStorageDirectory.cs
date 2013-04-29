@@ -32,6 +32,11 @@ namespace Cassette.IO
             get { return basePath; }
         }
 
+        public string GetAbsolutePath()
+        {
+            return GetAbsolutePath("");
+        }
+
         public bool Exists
         {
             get
